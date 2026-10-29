@@ -8,7 +8,7 @@ import pandas as pd
 import streamlit as st
 
 import ai
-import db
+import store as db
 import verify
 
 st.set_page_config(page_title="LeadForge", page_icon="🎯", layout="wide")
@@ -376,3 +376,4 @@ and 12+ months of clean records. List on Acquire.com / Flippa / Empire Flippers 
                f"- Clients: {n_clients} | Repeat: {repeat:.0f}% | Top client share: {top:.0f}%\n"
                f"- QA pass rate: {acc:.0f}% | Avg turnaround: {tat or 0:.1f} days\n")
     st.download_button("⬇️ Data-room summary", summary, "data_room_summary.md")
+              
